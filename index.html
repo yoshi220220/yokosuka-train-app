@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>横須賀市内交通系アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <h1>-----------------------------横須賀市内交通系アプリ-------------------------------</h1> 
+
+ <h18>　　　　　　　　　　　　　　　　　　　　　　　　Yokosuka city transportation app　　　　　　　　　　　　　　　　　　　　　　　</h18>
+ 
+ <div id="clock"></div>
+ <script>
+ const clockElement = document.getElementById("clock");
+ 
+ function updateClock() {
+     const now = new Date();
+     const hours = String(now.getHours()).padStart(2, '0');
+     const minutes = String(now.getMinutes()).padStart(2, '0');
+     const seconds = String(now.getSeconds()).padStart(2, '0');
+     const timeString = `${hours}:${minutes}:${seconds}`;
+     clockElement.textContent = timeString;
+ }
+ 
+ updateClock(); // 初回表示
+ setInterval(updateClock, 1000); // 1秒ごとに更新
+ </script>
+<h2>-鉄道 railway-</h2><h6>-京浜急行              JR横須賀線-</h6> 
+
+
+
+<div class="img-box"></div>
+<img id="京急路線図1" src="img/京急路線図1.png">
+<img id="京急路線図2" src="img/京急路線図2.png">
+<img id="京急路線図3" src="img/京急路線図3.png">
+<img id="京急路線図4" src="img/京急路線図4.png">
+<div>  
+
+<div class="img-box"></div>
+<img id="京急運賃" src="img/京急運賃.png">
+<div>
+ 
+   
+<li><a href=" https://www.keikyu.co.jp/">https://www.keikyu.co.jp/</a></li>
+   <h11>↑京浜急行公式ホームページ</h11>
+  
+<h19>種別；</h19>        
+<h20>普通</h20> <h21>特急</h21> <h22>急行</h22> <h23>快特</h23> <h24>✈快特</h24>
+ 
+
+     
+   
+     
+  
+          
+ <div class="img-box"></div>   
+<img id="バス路線図3" src="img/バス路線図3.png">
+
+
+<img id="バス路線図4" src="img/バス路線図4.png">
+<div>
+  <div class="img-box"></div>
+<img id="横須賀線運賃" src="img/横須賀線運賃.png">
+<div>    
+<li><a href="https://traininfo.jreast.co.jp/ ">https://traininfo.jreast.co.jp/ </a></li>  <h13>↑横須賀線（JR東日本）ホームページ</h13>  
+   
+ 
+                                           
+<h25>種別；</h25> <h26>普通</h26>
+<h3>-バス bus -</h3> <h7>-京浜急行バス-</h7>
+
+
+
+
+<div class="img-box"></div>
+<img id="バス路線図1" src="img/バス路線図1.png">
+<img id="バス路線図2" src="img/バス路線図2.png">
+<div>  
+
+    <li><a href= " https://www.keikyu-bus.co.jp/"> https://www.keikyu-bus.co.jp/ </a></li> 
+    <li><a href= "https://keikyu-busnavi.jp "> https://keikyu-busnavi.jp  </a></li>  
+  <h9>↑京浜急行バス接近情報 京急バスホームページ</h9>
+
+                                                                                                           
+<h4>-地図 混雑状況 Map and crowd situation - </h4>
+<div>  
+    <li><a href= "https://maps.google.co.jp "> https://maps.google.co.jp </a></li>     
+ <h14>↑Googlemap グーグルマップ</h14> 
+ <img id="gugurumap" src="img/gugurumap.png">
+<div>   
+
+ 
+
+<li><a href=""上に戻る back to top">上に戻る back to top</a></li>
+
+
+</html>
+</body>
+
+ 
+
+
+
+
+
+
+
+
+
+

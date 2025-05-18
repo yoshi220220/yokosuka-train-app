@@ -1,0 +1,255 @@
+
+h1 {
+   background-color: rgb(60, 49, 131) ;
+   font-family: serif;
+   font-size: 40px;
+   text-align: left;
+   color: rgb(255, 255, 255);
+}
+
+
+
+h2{
+   background-color:rgba(200, 252, 141, 0.863) ;
+   
+   font-size: 25px;
+   text-align: left;
+   
+}
+h3{
+  background-color:rgba(200, 252, 141, 0.863) ;
+   font-size: 25px;
+   text-align: left;
+   
+}
+h4{
+  background-color:rgba(200, 252, 141, 0.863) ;
+   font-size: 25px;
+   text-align: left;
+   
+}
+h5{
+   font-size: 25px;
+   text-align: left;
+   color: rgb(59, 71, 59);  
+}
+
+   
+    
+h6{font-family: serif;
+   font-size: 20px;
+   color:  rgb(255, 0, 0);
+
+ } 
+ h7{font-family: serif;
+  font-size: 20px;
+  color:rgb(255, 0, 0);
+
+
+} 
+   
+ h8{
+  font-size: 20px;
+   color: blue;
+   text-align: end;
+ }
+
+ h9{
+   font-size: 20px;
+   color: black;
+   text-align: end;
+ }
+
+h10{
+   font-size: 20px;
+   color: blue;
+ }
+
+ 
+ h11{
+   font-size: 20px;
+   color: black;
+   
+ }
+
+ h12{
+ 
+   font-size: 20px;
+   color: blue;
+ }
+ h13{
+   font-size: 20px;
+   color: black;
+ }
+
+ 
+
+ h14{
+   font-size: 20px;
+   color: black;
+ }
+
+ h15{   
+   font-size: 20px;
+   color: blue;
+
+
+ }
+
+ h16{
+    font-size: 20px;
+    color: blue;
+ }
+
+
+ h17{
+   font-size: 20px;
+   text-align: start;
+   color: blue;
+
+}
+
+#京急路線図1{
+  width: 20%;  
+  }
+
+#京急路線図2{
+   width: 20%;
+    
+    }
+  
+#京急路線図3{
+  width: 20%;
+  
+  }
+
+  #京急路線図4{
+    width: 20%;
+    
+    }
+  
+
+    #バス路線図3{
+      width: 11%;
+    
+      }
+  
+     #バス路線図4{
+      width: 7%;
+        
+      }
+
+    
+
+        #バス路線図1{
+          width: 15%;
+         align-self: self-end;
+        
+          }
+      
+      #バス路線図2{
+     width: 20%;
+     align-self: self-end;
+            }
+         
+h18{
+  font-family: serif;
+  font-size: 20px;
+  color: rgba(16, 75, 184, 0.781);
+  text-align: center;
+
+}
+
+#gugurumap{
+  width: 5%;
+}
+h19{
+  font-size: 25px;
+  
+ }
+h20{
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+ 
+ }
+ h21{
+  font-size: 25px;
+  color: crimson;
+  
+ }
+ 
+ 
+ 
+ h22{
+  font-size: 25px;
+  color: blue;
+}
+
+ 
+ h23{
+    font-size: 25px;
+    color: green;
+   
+}
+   
+  h24{
+    font-size: 25px;
+    color: orange;
+   
+   }
+  h25{
+    font-size: 25px;
+  
+   }
+   
+   
+   
+   
+  h26{
+    font-size: 25px;
+    color:rgb(27, 231, 0);
+   
+  
+   }
+
+   #clock {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(171, 173, 24, 0.884);
+   font-family: 'Times New Roman', Times, serif;
+    
+} 
+#京急運賃{
+
+  width: 50%;
+   }
+#横須賀線運賃{
+
+  width: 50%;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
