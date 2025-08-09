@@ -2,15 +2,16 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>横須賀市内交通系アプリ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
- <h1>-----------------------------横須賀市内交通系アプリ-------------------------------</h1> 
+ <h1 id="pc">-----------------------------横須賀市内交通系アプリ-------------------------------</h1>
+ <h1 id="sp">横須賀市内交通系アプリ</h1>
 
- <h18>　　　　　　　　　　　　　　　　　　　　　　　　Yokosuka city transportation app　　　　　　　　　　　　　　　　　　　　　　　</h18>
+ <p>Yokosuka city transportation app</p>
  
  <div id="clock"></div>
  <script>
@@ -28,97 +29,190 @@
  updateClock(); // 初回表示
  setInterval(updateClock, 1000); // 1秒ごとに更新
  </script>
-<h2>-鉄道 railway-</h2><h6>-京浜急行              JR横須賀線-</h6> 
+</head>
+<body>
+  <button id="toggleModeBtn">ダークモードに変更</button>
+
+  <script>
+    let isDark = false;
+
+    document.getElementById("toggleModeBtn").addEventListener("click", function() {
+      if (!isDark) {
+        // ダークモードに切り替え（背景のみ変更）
+        document.body.style.backgroundColor = "#001f3f"; // 濃紺
+        this.textContent = "ライトモードに変更";
+        isDark = true;
+      } else {
+        // ライトモードに戻す（背景のみ変更）
+        document.body.style.backgroundColor = "#FFFFFF"; // 白
+        this.textContent = "ダークモードに変更";
+        isDark = false;
+      }
+    });
+  </script>
+</bo>        
+
+<h2>-鉄道 railway-</h2> <h6>-京浜急行              JR横須賀線-</h6> 
 
 
-
-<div class="img-box"></div>
-<img id="京急路線図1" src="img/京急路線図1.png">
-<img id="京急路線図2" src="img/京急路線図2.png">
-<img id="京急路線図3" src="img/京急路線図3.png">
-<img id="京急路線図4" src="img/京急路線図4.png">
-<div>  
-
-<div class="img-box"></div>
-<img id="京急運賃" src="img/京急運賃.png">
-<div>
- 
+<table id="pc">
+   <th scope="col">駅名</th>
+    <th scope="col">駅番号</th>
+  <th scope="col">駅名</th>
+    <th scope="col">駅番号</th>
    
-<li><a href=" https://www.keikyu.co.jp/">https://www.keikyu.co.jp/</a></li>
-   <h11>↑京浜急行公式ホームページ</h11>
+ <tr>
+    <td>　　浦賀　　</td>
+    <td>　　kk64　　</td>
+     <td>　　横浜　　</td>
+    <td>　　kk42　　</td>
+  </tr>
+  <tr>
+    <td>　　馬堀海岸　　</td>
+    <td>　　kk63　　</td>
+    <td>　　神奈川　　</td>
+    <td>　　kk41　　</td>
+</tr>
+  <tr>
+    <td>　　京急大津　　</td>
+    <td>　　kk62　　</td>
+     <td>　　京急東神奈川　　</td>
+    <td>　　kk40　　</td>
+  </tr>
+  <tr>
+    <td>　　堀ノ内　　</td>
+    <td>　　kk61　　</td>
+     <td>　　神奈川新町　　</td>
+    <td>　　kk39　　</td>
+  </tr>
+   <tr>
+    <td>　　県立大学　　</td>
+    <td>　　kk60　　</td>
+     <td>　　子安　　</td>
+    <td>　　kk38　　</td>
+  </tr>
+   <tr>
+    <td>　　横須賀中央　　</td>
+    <td>　　kk59　　</td>
+     <td>　　京急新子安　　</td>
+    <td>　　kk37　　</td>
+  </tr>
+   <tr>
+    <td>　　汐入　　</td>
+    <td>　　kk58　　</td>
+     <td>　　生麦　　</td>
+    <td>　　kk36　　</td>
+  </tr>
+   <tr>
+    <td>　　逸見　　</td>
+    <td>　　kk57　　</td>
+   <td>　　花月総持寺　　</td>
+    <td>　　kk35　　</td>
+  </tr>
+   <td>　　安針塚　　</td>
+    <td>　　kk56　　</td>
+   <td>　　京急鶴見　　</td>
+    <td>　　kk34　　</td>
+  </tr>
+   <td>　　京急田浦　　</td>
+    <td>　　kk55　　</td>
+     <td>　　鶴見市場　　</td>
+    <td>　　kk33　　</td>
+  </tr>
+   <td>　　追浜　　</td>
+    <td>　　kk54　　</td>
+     <td>　　八丁畷　　</td>
+    <td>　　kk32　　</td>
+  </tr>
+  <td>　　金沢八景　　</td>
+    <td>　　kk53　　</td>
+   <td>　　京急川崎　　</td>
+    <td>　　kk31　　</td>
+  </tr>
+ <tr>
+    <td>　　金沢文庫　　</td>
+    <td>　　kk52　　</td>
+     <td>　　六郷土手　　</td>
+    <td>　　kk30　　</td>
+  </tr>
+  <tr>
+    <td>　　能見台　　</td>
+    <td>　　kk51　　</td>
+    <td>　　雑色　　</td>
+    <td>　　kk29　　</td>
+</tr>
+  <tr>
+    <td>　　京急富岡　　</td>
+    <td>　　kk50　　</td>
+     <td>　　京急鎌田　　</td>
+    <td>　　kk28　　</td>
+  </tr>
+  <tr>
+    <td>　　杉田　　</td>
+    <td>　　kk49　　</td>
+     <td>　　梅屋敷　　</td>
+    <td>　　kk27　　</td>
+  </tr>
+   <tr>
+    <td>　　屛風ヶ浦　　</td>
+    <td>　　kk48　　</td>
+     <td>　　大森町　　</td>
+    <td>　　kk26　　</td>
+  </tr>
+   <tr>
+    <td>　　上大岡　　</td>
+    <td>　　kk47　　</td>
+     <td>　　平和島　　</td>
+    <td>　　kk25　　</td>
+  </tr>
+   <tr>
+    <td>　　弘明寺　　</td>
+    <td>　　kk46　　</td>
+     <td>　　大森海岸　　</td>
+    <td>　　kk24　　</td>
+  </tr>
+   <tr>
+    <td>　　井土ヶ谷　　</td>
+    <td>　　kk45　　</td>
+   <td>　　立会川　　</td>
+    <td>　　kk23　　</td>
+  </tr>
+   <td>　　南太田　　</td>
+    <td>　　kk45　　</td>
+   <td>　　鮫洲　　</td>
+    <td>　　kk22　　</td>
+  </tr>
+   <td>　　黄金町　　</td>
+    <td>　　kk44　　</td>
+     <td>　　青物横丁　　</td>
+    <td>　　kk21　　</td>
+  </tr>
+   <td>　　日ノ出町　　</td>
+    <td>　　kk43　　</td>
+     <td>　　新馬場　　</td>
+    <td>　　kk20　　</td>
+  </tr>
+  <td>　　　　</td>
+    <td>　　　　</td>
+   <td>　　北品川　　</td>
+    <td>　　kk02　　</td>
+  </tr>
+  <td>　　　　</td>
+    <td>　　　　</td>
+   <td>　　品川　　</td>
+    <td>　　kk01　　</td>
+  </tr>
+  
+
+<button><li><a href="https://www.keikyu.co.jp/ ">京浜急行ホームページ</a></li></button>  
+   
+
+   
   
 <h19>種別；</h19>        
 <h20>普通</h20> <h21>特急</h21> <h22>急行</h22> <h23>快特</h23> <h24>✈快特</h24>
  <table>
-   <th scope="col">乗車駅</th>
-    <th scope="col">到着駅</th>
-    <th scope="col">時間</th>
-   
- <tr>
-    <td>　　浦賀　　</td>
-    <td>　　堀ノ内　　</td>
-    <td>　　約5分　　</td>
-  </tr>
-  <tr>
-    <td>　　浦賀　　</td>
-    <td>　　横須賀中央　　</td>
-    <td>　　約10分　　</td> 
-  </tr>
-  <tr>
-    <td>　　浦賀　　</td>
-    <td>　　追浜　　</td>
-    <td>　　約15分　　</td>
-  </tr>
-  <tr>
-    <td>　　浦賀　　</td>
-    <td>　　金沢八景　　</td>
-    <td>　　約20分　　</td>
-  </tr>
-   <tr>
-    <td>　　浦賀　　</td>
-    <td>　　金沢文庫　　</td>
-    <td>　　約20分　　</td>
-  </tr>
-   <tr>
-    <td>　　浦賀　　</td>
-    <td>　　上大岡　　</td>
-    <td>　　約30分　　</td>
-  </tr>
-   <tr>
-    <td>　　浦賀　　</td>
-    <td>　　横浜　　</td>
-    <td>　　約40分　　</td>
-  </tr>
-   <tr>
-    <td>　　浦賀　　</td>
-    <td>　　京急川崎　　</td>
-    <td>　　約50分　　</td>
-  </tr>
-   <td>　　浦賀　　</td>
-    <td>　　京急蒲田　　</td>
-    <td>　　約55分　　</td>
-  </tr>
-   <td>　　浦賀　　</td>
-    <td>　　品川　　</td>
-    <td>　　約60分　　</td>
-  </tr>
-   <td>　　浦賀　　</td>
-    <td>　　羽田空港第３ターミナル　　</td>
-    <td>　　約65分　　</td>
-  </tr>
-  <td>　　浦賀　　</td>
-    <td>　　羽田空港第１・第２ターミナル　　</td>
-    <td>　　約70分　　</td>
-  </tr>
- 
-</table>
-
-
-     
-   
-     
-  
-          
+      
  <div class="img-box"></div>   
 <img id="バス路線図3" src="img/バス路線図3.png">
 
@@ -128,99 +222,12 @@
   <div class="img-box"></div>
 <img id="横須賀線運賃" src="img/横須賀線運賃.png">
 <div>    
-<li><a href="https://traininfo.jreast.co.jp/ ">https://traininfo.jreast.co.jp/ </a></li>  <h13>↑横須賀線（JR東日本）ホームページ</h13>  
-   
+<button><li><a href="https://traininfo.jreast.co.jp/ ">JR東日本ホームページ </a></li></button>  
  
                                            
 <h25>種別；</h25> <h26>普通</h26>
 
-<table>
-   <th scope="col">乗車駅</th>
-    <th scope="col">到着駅</th>
-    <th scope="col">時間</th>
-   
- <tr>
-    <td>　　久里浜　　</td>
-    <td>　　衣笠　　</td>
-    <td>　　約5分　　</td>
-  </tr>
-  <tr>
-    <td>　　久里浜　　</td>
-    <td>　　横須賀　　</td>
-    <td>　　約10分　　</td> 
-  </tr>
-  <tr>
-    <td>　　久里浜　　</td>
-    <td>　　田浦　　</td>
-    <td>　　約15分　　</td>
-  </tr>
-  <tr>
-    <td>　　久里浜　　</td>
-    <td>　　東逗子　　</td>
-    <td>　　約20分　　</td>
-  </tr>
-   <tr>
-    <td>　　久里浜　　</td>
-    <td>　　逗子　　</td>
-    <td>　　約20分　　</td>
-  </tr>
-   <tr>
-    <td>　　久里浜　　</td>
-    <td>　　鎌倉　　</td>
-    <td>　　約25分　　</td>
-  </tr>
-   <tr>
-    <td>　　久里浜　　</td>
-    <td>　　北鎌倉　　</td>
-    <td>　　約30分　　</td>
-  </tr>
-   <tr>
-    <td>　　久里浜　　</td>
-    <td>　　大船　　</td>
-    <td>　　約30分　　</td>
-  </tr>
-   <td>　　久里浜　　</td>
-    <td>　　戸塚　　</td>
-    <td>　　約40分　　</td>
-  </tr>
-   <td>　　久里浜　　</td>
-    <td>　　東戸塚　　</td>
-    <td>　　約45分　　</td>
-  </tr>
-   <td>　　久里浜　　</td>
-    <td>　　保土ヶ谷　　</td>
-    <td>　　約50分　　</td>
-  </tr>
-  <td>　　久里浜　　</td>
-    <td>　　横浜　　</td>
-    <td>　　約55分　　</td>
-  </tr>
- <td>　　久里浜　　</td>
-    <td>　　新川崎　　</td>
-    <td>　　約60分　　</td>
-  </tr>
- <td>　　久里浜　　</td>
-    <td>　　武蔵小杉　　</td>
-    <td>　　約65分　　</td>
-  </tr>
- <td>　　久里浜　　</td>
-    <td>　　西大井　　</td>
-    <td>　　約70分　　</td>
-  </tr>
- <td>　　久里浜　　</td>
-    <td>　　品川　　</td>
-    <td>　　約75分　　</td>
-  </tr>
- <td>　　久里浜　　</td>
-    <td>　　新橋　　</td>
-    <td>　　約75分　　</td>
-  </tr>
-  <td>　　久里浜　　</td>
-    <td>　　東京　　</td>
-    <td>　　約80分　　</td>
-  </tr>
-  
-</table>
+
 <h3>-バス bus -</h3> <h7>-京浜急行バス-</h7>
 
 
@@ -231,21 +238,21 @@
 <img id="バス路線図2" src="img/バス路線図2.png">
 <div>  
 
-    <li><a href= " https://www.keikyu-bus.co.jp/"> https://www.keikyu-bus.co.jp/ </a></li> 
-    <li><a href= "https://keikyu-busnavi.jp "> https://keikyu-busnavi.jp  </a></li>  
-  <h9>↑京浜急行バス接近情報 京急バスホームページ</h9>
+<button> <li><a href= " https://www.keikyu-bus.co.jp/"> 京急バスホームページ </a></li> </button>   
+<button>  <li><a href= "https://keikyu-busnavi.jp ">京急バス接近情報  </a></li> </button>   
+
 
                                                                                                            
 <h4>-地図 混雑状況 Map and crowd situation - </h4>
 <div>  
-    <li><a href= "https://maps.google.co.jp "> https://maps.google.co.jp </a></li>     
- <h14>↑Googlemap グーグルマップ</h14> 
+<button> <li><a href= "https://maps.google.co.jp "> Google　map </a></li> </button>      
+
  <img id="gugurumap" src="img/gugurumap.png">
 <div>   
 
  
 
-<li><a href=""上に戻る back to top">上に戻る back to top</a></li>
+<button><li><a href=""上に戻る back to top">上に戻る </a></li></button>
 
 
 </body>
